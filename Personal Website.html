@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Neteti Manosai's Personal Website </title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+    }
+    ul {
+      list-style: none;
+    }
+    .nav {
+      display: flex;
+      justify-content: flex-end;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgb(20, 30, 40);
+      color: #c4c3d0;
+    }
+    .nav-list {
+      display: flex;
+      margin-right: 2rem;
+    }
+    .nav-list a {
+      display: block;
+      padding: 2rem;
+      font-size: 2rem;
+      color: #c4c3d0;
+      text-decoration: none;
+      background-color: #333; 
+      border-radius: 5px;
+      margin: 0 0.5rem;
+    }
+    a:visited {
+      text-decoration: none;
+    }
+    .welcome-section {
+      height: 100vh;
+      width: 100%;
+      background-color: #c4c3d0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .welcome-section h1 {
+      font-size: 6rem;
+    }
+    .welcome-section p {
+      font-size: 4rem;
+    }
+    .about-section {
+      height: 50rem;
+      display: flex;
+      flex-direction: column;
+      padding-top: 14rem;
+      align-items: center;
+      background-color: #383838;
+      color: #c4c3d0;
+    }
+    .about-section img {
+      height: 15rem; 
+      border-radius: 15px;
+      box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.30);
+    }
+    .about-section p {
+      margin: 2rem 10rem; 
+      text-align: center;
+      font-size: 2.5rem;
+      max-width: 60rem;
+    }
+    .education-selection {
+      width: 100%;
+      background-color: #778899;
+    }
+    .education-section-header {
+      text-align: center;
+      padding-top: 10rem;
+      font-size: 4rem; 
+      width: 25rem;
+      margin: auto;
+      border-bottom: solid black;
+    }
+    .education-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80%; 
+      margin: 0 auto;
+    }
+    .education-grid p {
+      font-size: 2.5rem; 
+      margin-bottom: 0.5rem; 
+    }
+    .project {
+      background-color: gray;
+      text-align: center;
+      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      text-decoration: none;
+    }
+    .contact-section {
+      background-color: #c4c3d0;
+      height: 40rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .contact-section h2 {
+      font-size: 5rem;
+    }
+    .contact-section p {
+      padding-top: 2rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .profile-link {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem;
+      padding-top: 2rem;
+      font-size: 3rem;
+    }
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 7rem;
+      font-size: 2rem;
+      background-color: rgb(20, 30, 40);
+      color: #c4c3d0;
+    }
+    @media (max-width: 35rem) {
+      html {
+        font-size: 40%;
+      }
+      .about-section p {
+        min-width: 60%;
+      }
+      .about-section {
+        height: 55rem;
+      }
+      .education-selection {
+        height: 250rem;
+      }
+    }
+    @media (max-width: 50rem) {
+      html {
+        font-size: 60%;
+      }
+    }
+    @media (max-width: 83rem) {
+      .education-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50rem;
+        margin: 0 auto;
+      }
+      .education-selection {
+        height: 190rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar" class="nav">
+    <ul class="nav-list">
+      <li>
+        <a href="#welcome-section">Home</a>
+      </li>
+      <li>
+        <a href="#about-section">About</a>
+      </li>
+      <li>
+        <a href="#education">Education</a>
+      </li>
+      <li>
+        <a href="#contact-section">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <section id="welcome-section" class="welcome-section">
+    <h1>N. Manosai</h1>
+    <p>Front-End Software Developer and A CSE-STUDENT </p>
+  </section>
+  <section id="about-section" class="about-section">
+    <img class="personal-photo" src="WhatsApp Image 2023-12-26 at 18.33.20_2f886de6.jpg" alt="manosai" />
+    <p>
+      Hello! My name is Neteti Manosai, and I am a Front End Software Developer currently residing in SRM-AP University, Neerukonda. </p>
+     <p>  <b> MY TECHNICAL SKILLS :- </b> C, C++, Python, Data Structures, DBMS, HTML, CSS, JavaScript. </p>
+     <p>  <b> MY SOFT SKILLS :- </b> Problem-solving skills and analytics , Communicative English , Time management, adaptability, proactive attitude.</p>
+  </section>
+  <section id="education" class="education-selection">
+    <h2 class="education-section-header"> EDUCATION</h2>
+    <div class="education-grid">
+        <p><b>Schooling:</b><br><i> Shanthinikethan High school E/M, GDK.</i><br><b> GRADE: </b><i> 100.0%</i> <br> <b>Year of Passing:</b><br><i> 2020</i> <br> </p>
+        <br><p><b>Intermediate:</b><br><i> Narayana Junior college, Maheshvaram.</i><br><b> GRADE: </b><i> 98.0%</i><br><b>Year of Passing:</b><br><i> 2022</i><br>
+        <br><b>Graduation:</b><br><i> SRM-AP UNIVERSITY, Neerukonda.</i><br><b> CURRENT GRADE: </b><i> 90.7%</i><br><b>Year of Passing:</b><br><i> 2026</i><br></p>
+    </div>
+  </section>
+  <section id="contact-section" class="contact-section">
+    <div class="contact-section-header">
+      <h2>Let's work together</h2>
+      <p>How do you take your coffee?</p>
+      <p><b>PHONE :- +91 7075589344</b></p>
+      <p><b>Email :- netetimanosai@gmail.com</b></p>
+    </div>
+    <div id="contact-links" class="profile-link">
+      <a href="https://www.linkedin.com/in/neteti-mano-sai-895174259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="linkedin.jpg" height="69" alt="LinkedIn"></a>
+      <a href="https://www.facebook.com/mano.sai.524?mibextid=ZbWKwL" target="_blank"><img src="facebook.jpeg" height="69" alt="Facebook"></a>
+      <a href="https://www.instagram.com/_mano_sai_1?igsh=ZGUzMzM3NWJiOQ==" target="_blank"><img src="instagram.webp" height="69" alt="Instagram"></a>
+    </div>
+  </section>
+  <footer id="footer" class="footer">
+    <p> Copyright &copy 2024 N.Manosai </p>
+  </footer>
+</body>
+</html>
